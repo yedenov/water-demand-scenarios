@@ -1,0 +1,16 @@
+{
+  "name": "water-demand-scenarios",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "How do irrigation efficiency and reference evapotranspiration affect a simplified seasonal water budget?",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node cli.mjs data/demo.json results",
+    "analyze": "node cli.mjs"
+  },
+  "license": "MIT"
+}
