@@ -1,0 +1,23 @@
+{
+  "areaHa": 10,
+  "efficiency": 0.65,
+  "alternativeEfficiency": 0.85,
+  "uncertaintyFraction": 0.15,
+  "periods": [
+    {
+      "etoMm": 80,
+      "kc": 0.5,
+      "effectiveRainMm": 20
+    },
+    {
+      "etoMm": 120,
+      "kc": 1.1,
+      "effectiveRainMm": 15
+    },
+    {
+      "etoMm": 100,
+      "kc": 0.8,
+      "effectiveRainMm": 10
+    }
+  ]
+}
