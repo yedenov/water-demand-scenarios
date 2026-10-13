@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Water Demand Scenarios — report</title><style>body{font:17px/1.6 system-ui;margin:48px auto;padding:0 24px;max-width:960px;color:#143143;background:#f4f8fa}h1{font-size:42px;line-height:1.15}strong{color:#985400}pre{background:white;padding:24px;overflow:auto;border:1px solid #cbdde5;border-radius:12px}a{color:#006a83}</style><h1>Water Demand Scenarios</h1><strong>SYNTHETIC DEMONSTRATION</strong><p>How do irrigation efficiency and reference evapotranspiration affect a simplified seasonal water budget?</p><h2>Method and interpretation</h2><p>For each period, ETc = ETo × Kc; net irrigation = max(0, ETc − effective rainfall). Gross irrigation = net / efficiency. One mm over one hectare equals 10 m³. Low and high scenarios multiply ETo by (1 ± uncertaintyFraction); these are sensitivity bounds, NOT statistical confidence intervals. Each period is independent: soil storage, runoff, groundwater, salinity and conveyance losses are excluded. The model uses the FAO-56 (1998) single-coefficient relationship, not a full FAO operational irrigation model.</p><h2>Inputs and results</h2><pre>{
+  "project": "water-demand-scenarios",
+  "dataStatus": "SYNTHETIC DEMONSTRATION",
+  "input": {
+    "areaHa": 10,
+    "efficiency": 0.65,
+    "alternativeEfficiency": 0.85,
+    "uncertaintyFraction": 0.15,
+    "periods": [
+      {
+        "etoMm": 80,
+        "kc": 0.5,
+        "effectiveRainMm": 20
+      },
+      {
+        "etoMm": 120,
+        "kc": 1.1,
+        "effectiveRainMm": 15
+      },
+      {
+        "etoMm": 100,
+        "kc": 0.8,
+        "effectiveRainMm": 10
+      }
+    ]
+  },
+  "result": {
+    "baselineGrossM3": 31846.153846153844,
+    "alternativeGrossM3": 24352.941176470587,
+    "modeledReductionM3": 7493.2126696832565,
+    "modeledReductionFraction": 0.2352941176470588,
+    "sensitivityGrossM3": [
+      26030.76923076923,
+      37661.53846153846
+    ]
+  }
+}
+</pre><p>Research prototype • no verified field impact • <a href="https://www.fao.org/4/X0490E/x0490e0b.htm">Method reference</a></p></html>

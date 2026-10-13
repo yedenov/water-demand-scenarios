@@ -1,0 +1,37 @@
+{
+  "project": "water-demand-scenarios",
+  "dataStatus": "SYNTHETIC DEMONSTRATION",
+  "input": {
+    "areaHa": 10,
+    "efficiency": 0.65,
+    "alternativeEfficiency": 0.85,
+    "uncertaintyFraction": 0.15,
+    "periods": [
+      {
+        "etoMm": 80,
+        "kc": 0.5,
+        "effectiveRainMm": 20
+      },
+      {
+        "etoMm": 120,
+        "kc": 1.1,
+        "effectiveRainMm": 15
+      },
+      {
+        "etoMm": 100,
+        "kc": 0.8,
+        "effectiveRainMm": 10
+      }
+    ]
+  },
+  "result": {
+    "baselineGrossM3": 31846.153846153844,
+    "alternativeGrossM3": 24352.941176470587,
+    "modeledReductionM3": 7493.2126696832565,
+    "modeledReductionFraction": 0.2352941176470588,
+    "sensitivityGrossM3": [
+      26030.76923076923,
+      37661.53846153846
+    ]
+  }
+}
